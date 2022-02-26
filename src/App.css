@@ -1,44 +1,52 @@
 .gradient__bg {
-  /* ff 3.6+ */
   background: -moz-radial-gradient(
     circle at 3% 25%,
     rgba(0, 40, 83, 1) 0%,
-    rgba(4, 12, 24, 1) 100%
+    rgba(4, 12, 24, 1) 25%
   );
 
   /* safari 5.1+,chrome 10+ */
   background: -webkit-radial-gradient(
     circle at 3% 25%,
     rgba(0, 40, 83, 1) 0%,
-    rgba(4, 12, 24, 1) 100%
+    rgba(4, 12, 24, 1) 25%
   );
 
   /* opera 11.10+ */
   background: -o-radial-gradient(
     circle at 3% 25%,
     rgba(0, 40, 83, 1) 0%,
-    rgba(4, 12, 24, 1) 100%
+    rgba(4, 12, 24, 1) 25%
   );
 
   /* ie 10+ */
   background: -ms-radial-gradient(
     circle at 3% 25%,
     rgba(0, 40, 83, 1) 0%,
-    rgba(4, 12, 24, 1) 100%
+    rgba(4, 12, 24, 1) 25%
   );
 
   /* global 92%+ browsers support */
   background: radial-gradient(
     circle at 3% 25%,
     rgba(0, 40, 83, 1) 0%,
-    rgba(4, 12, 24, 1) 100%
+    rgba(4, 12, 24, 1) 25%
   );
+}
+
+.gradient__text {
+  background: var(--gradient-text);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .section__padding {
   padding: 4rem 6rem;
 }
-
+.section__margin {
+  margin: 4rem 6rem;
+}
 .slide-bottom {
   -webkit-animation: slide-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
